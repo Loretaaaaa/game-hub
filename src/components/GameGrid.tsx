@@ -23,8 +23,8 @@ const GameGrid = () => {
             </GameCardContainer>
           ))}
         {games.map((game) => (
-          <GameCardContainer>
-            <GameCardComponent key={game.id} game={game} />
+          <GameCardContainer key={game.id}>
+            <GameCardComponent game={game} />
           </GameCardContainer>
         ))}
       </SimpleGrid>
